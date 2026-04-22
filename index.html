@@ -21137,16 +21137,34 @@ async function generateReport() {
     });
 
     const blob = await Packer.toBlob(doc);
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
     const fieldCode = field || 'UNRWA';
     const weekStr = dateFrom.replace(/-/g,'') + '-' + dateTo.replace(/-/g,'');
-    a.href = url;
-    a.download = `UNRWA_${fieldCode}_WeeklySecurityReport_${weekStr}.docx`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    const filename = `UNRWA_${fieldCode}_WeeklySecurityReport_${weekStr}.docx`;
+
+    // Convert blob to base64 data URI — most compatible across sandboxed iframes
+    const reader = new FileReader();
+    reader.onload = function() {
+      const dataUri = reader.result;
+      // Method 1: hidden anchor click
+      const a = document.createElement('a');
+      a.href = dataUri;
+      a.download = filename;
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      // Method 2: open in new tab as fallback (user can save from there)
+      setTimeout(function() {
+        const statusEl = document.getElementById('status-msg');
+        if (statusEl && statusEl.textContent.includes('Error')) {
+          window.open(dataUri, '_blank');
+        }
+      }, 1500);
+    };
+    reader.onerror = function() {
+      setStatus('Error reading file. Please try again.', true);
+    };
+    reader.readAsDataURL(blob);
     setStatus('Document downloaded successfully.');
   } catch(err) {
     setStatus('Error: ' + err.message, true);
