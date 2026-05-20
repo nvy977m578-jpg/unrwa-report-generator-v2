@@ -10450,7 +10450,7 @@ var __async = (__this, __arguments, generator) => {
       super("a:blip");
       this.root.push(
         new BlipAttributes({
-          embed: `rId{${mediaData.fileName}}`,
+          embed: `rId{${mediaData.fileName}`,
           cstate: "none"
         })
       );
@@ -11608,7 +11608,7 @@ var __async = (__this, __arguments, generator) => {
       super("w:numId");
       this.root.push(
         new Attributes({
-          val: typeof id === "string" ? `{${id}}` : id
+          val: typeof id === "string" ? `{${id}` : id
         })
       );
     }
@@ -15283,7 +15283,7 @@ var __async = (__this, __arguments, generator) => {
     name,
     attributes: __spreadValues({
       id: { key: "r:id", value: id }
-    }, fontKey ? { fontKey: { key: "w:fontKey", value: `{${fontKey}}` } } : {}),
+    }, fontKey ? { fontKey: { key: "w:fontKey", value: `{${fontKey}` } } : {}),
     children: [...subsetted ? [new OnOffElement("w:subsetted", subsetted)] : []]
   });
   const createFont = ({
@@ -18860,12 +18860,12 @@ var __async = (__this, __arguments, generator) => {
     replace(xmlData, mediaData, offset) {
       let currentXmlData = xmlData;
       mediaData.forEach((image, i) => {
-        currentXmlData = currentXmlData.replace(new RegExp(`{${image.fileName}}`, "g"), (offset + i).toString());
+        currentXmlData = currentXmlData.replace(new RegExp(`{${image.fileName}`, "g"), (offset + i).toString());
       });
       return currentXmlData;
     }
     getMediaData(xmlData, media) {
-      return media.Array.filter((image) => xmlData.search(`{${image.fileName}}`) > 0);
+      return media.Array.filter((image) => xmlData.search(`{${image.fileName}`) > 0);
     }
   }
   class NumberingReplacer {
@@ -18873,7 +18873,7 @@ var __async = (__this, __arguments, generator) => {
       let currentXmlData = xmlData;
       for (const concreteNumbering of concreteNumberings) {
         currentXmlData = currentXmlData.replace(
-          new RegExp(`{${concreteNumbering.reference}-${concreteNumbering.instance}}`, "g"),
+          new RegExp(`{${concreteNumbering.reference}-${concreteNumbering.instance}`, "g"),
           concreteNumbering.numId.toString()
         );
       }
@@ -19724,7 +19724,7 @@ var __async = (__this, __arguments, generator) => {
         };
         contexts.set(key, context);
         for (const [patchKey, patchValue] of Object.entries(options2.patches)) {
-          const patchText = `{{${patchKey}}}`;
+          const patchText = `{{${patchKey}`;
           const renderedParagraphs = findLocationOfText(json, patchText);
           replacer(
             json,
@@ -20540,105 +20540,101 @@ var __async = (__this, __arguments, generator) => {
 <script>
 // ── Embedded digest data (auto-generated) ──
 const DIGEST_DATA = {
-  "date": "2026-05-13",
+  "date": "2026-05-20",
   "kpi": {
     "Gaza": {
-      "fatalities_30d": 786,
+      "fatalities_30d": 856,
       "period": "since ceasefire 10 Oct 2025",
-      "note": "Figures carried forward (OCHA oPt Humanitarian Situation Report 23 Apr 2026) — no newer verified fatality figure found this week"
+      "note": "OCHA oPt Humanitarian Situation Report (15 May 2026): 856 fatalities since ceasefire; latest period 7\u201312 May = 10 killed"
     },
     "WestBank": {
       "fatalities_30d": 35,
-      "period": "YTD 2026 (OCHA oPt 17 Apr 2026)",
-      "settler_incidents": 30,
-      "settler_period": "21–27 Apr 2026 (OCHA oPt Humanitarian Situation Report 1 May 2026)"
+      "period": "YTD 2026 (carried forward; no newer verified figure found this week)",
+      "settler_incidents": 33,
+      "settler_period": "5\u201311 May 2026 (OCHA oPt Humanitarian Situation Report 15 May 2026)"
     },
     "Lebanon": {
-      "killed": "2,576",
+      "killed": "3,020",
       "period": "since 2 Mar 2026",
-      "displaced": ">119,000 in 626 shelters",
-      "disp_source": "OCHA Lebanon Flash Update #22 (as of 30 Apr 2026; published 2 May 2026)"
+      "displaced": "~129,721 in 632 collective shelters",
+      "disp_source": "OCHA Lebanon Flash Update #26 (as of 14 May 2026; published 16 May 2026)"
     },
     "Syria": {
       "fatalities_30d": 268,
-      "period": "Q1 2026 (Jan–Mar)",
-      "note": "Figures carried forward from SNHR quarterly report 1 Apr 2026 — no newer verified 30-day figure found this week"
+      "period": "Q1 2026 (Jan\u2013Mar)",
+      "note": "Figures carried forward from SNHR quarterly report 1 Apr 2026 \u2014 no newer verified 30-day figure found this week"
     },
     "Jordan": {
-      "note": "Iran-launched missile and drones intercepted; no injuries reported; some material damage recorded (Petra/Jordan Armed Forces, 1 Apr 2026)",
+      "note": "No newer verified Jordan intercept figure found this week; carried forward: Iran-launched missile and drones intercepted; no injuries; some material damage (Petra/Jordan Armed Forces, 1 Apr 2026)",
       "fatalities_30d": "N/A"
     },
-    "as_of": "13 May 2026"
+    "as_of": "20 May 2026"
   },
   "sparklines": {
     "GFO": {
       "label": "Gaza",
-      "spark": "Gaza fatalities since ceasefire (monthly)\n▅ ▄ ▃ ▂ ▂ ▁\nNov  Dec  Jan  Feb  Mar  Apr\nValues: Nov:180, Dec:150, Jan:120, Feb:80, Mar:60, Apr:52(est)\nNote: May figure not available (carried forward)"
+      "spark": "Gaza fatalities since ceasefire (monthly)\n\u2585 \u2584 \u2583 \u2582 \u2582 \u2581\nNov  Dec  Jan  Feb  Mar  Apr\nValues: Nov:180, Dec:150, Jan:120, Feb:80, Mar:60, Apr:52(est)\nNote: May figure not available (carried forward)"
     },
     "WBFO": {
       "label": "West Bank",
-      "wbSpark": "West Bank fatalities (monthly)\n▅ █ ▄ ▂ ▃ ▃\nNov  Dec  Jan  Feb  Mar  Apr\nValues: Nov:23, Dec:13, Jan:6, Feb:11, Mar:12, Apr:6(est)",
-      "settlerSpark": "Settler attacks (weekly)\n█ ▆\n14–20 Apr  21–27 Apr\nValues: 37, 30 (OCHA oPt Humanitarian Situation Report 1 May 2026)"
+      "wbSpark": "West Bank fatalities (monthly)\n\u2585 \u2588 \u2584 \u2582 \u2583 \u2583\nNov  Dec  Jan  Feb  Mar  Apr\nValues: Nov:23, Dec:13, Jan:6, Feb:11, Mar:12, Apr:6(est)",
+      "settlerSpark": "Settler attacks (weekly)\n\u2588 \u2586\n5\u201311 May  21\u201327 Apr\nValues: 33, 30 (OCHA oPt Humanitarian Situation Report 15 May 2026; prior week carried forward)"
     },
     "LFO": {
       "label": "Lebanon",
-      "spark": "Lebanon killed since 2 Mar 2026 (cumulative)\n▁ ▂ ▃ ▄ ▆ █\nApr 9  Apr 30\nValues: 1,888, 2,576 (OCHA Flash Update #22)"
+      "spark": "Lebanon killed since 2 Mar 2026 (cumulative)\n\u2581 \u2582 \u2583 \u2584 \u2586 \u2588\nApr 9  Apr 30  May 18\nValues: 1,888, 2,576, 3,020 (MoPH 18 May 2026)"
     },
     "SFO": {
       "label": "Syria",
-      "spark": "Syria civilian casualties\nN/A — latest verified daily figure: 3 civilians killed on 26 Apr 2026 (SNHR; published 27 Apr 2026)"
+      "spark": "Syria civilian casualties\nN/A \u2014 latest verified daily figure: 3 civilians killed on 26 Apr 2026 (SNHR; published 27 Apr 2026)"
     },
     "JFO": {
       "label": "Jordan",
-      "spark": "N/A — see OSAC elevated assessment"
+      "spark": "N/A \u2014 see OSAC elevated assessment"
     }
   },
   "headlines": {
     "UNRWA": [
-      "OCHA oPt (1 May 2026): Funding remains critically low, with just over 10 per cent secured four months into 2026",
-      "UN (3 Mar 2026): UNRWA occupied Palestinian territory flash appeal 2026 seeks US$ 1.26 billion for the Gaza Strip and the West Bank, including East Jerusalem"
+      "UN News (15 May 2026): UN warns of mounting hardship across Gaza, West Bank and Lebanon; aid offloading constraints persist",
+      "Democracy Now (18 May 2026): Israel cabinet approved plans to build a military compound at former UNRWA site in East Jerusalem"
     ],
     "Lebanon": [
-      "OCHA (30 Apr 2026): Flash Update #22 — MoPH reports 2,576 deaths and 7,962 injuries linked to the conflict",
-      "OCHA (30 Apr 2026): Flash Update #22 — more than 119,000 people residing in 626 shelters"
+      "Lebanon MoPH (18 May 2026): cumulative toll since 2 Mar reported at 3,020 killed and 9,273 wounded",
+      "UN Noon Briefing (19 May 2026): OCHA reports ~95,000 people fled due to repeated displacement orders since last weekend"
     ],
     "Iran-Israel": [
-      "Security Council Report (May 2026): Syria monthly forecast notes spillover effects of the regional crisis and continued insecurity in southern Syria"
+      "Al Jazeera liveblog (17 May 2026): Iran war updates; ongoing diplomatic pressure and regional security volatility",
+      "CENTCOM testimony (reported 18 May 2026): regional air defense intercepted large volumes of drones/missiles during recent Iran conflict"
     ],
     "Gaza": [
-      "OCHA oPt (1 May 2026): Over 50,300 pallets offloaded at Kerem Shalom and Zikim between 1 and 30 April (UN 2720 data retrieved 30 Apr)",
-      "OCHA oPt (1 May 2026): NGO workers killed in Gaza triggered suspension of some health and water services"
+      "OCHA oPt (15 May 2026): 856 fatalities since ceasefire; 10 killed reported 7\u201312 May",
+      "OCHA oPt (15 May 2026): April offloaded pallets up to 49,500 (UN 2720 dashboard data retrieved 13 May 2026); offloading rates declined 1\u201311 May"
     ],
     "West Bank": [
-      "OCHA oPt (1 May 2026): At least 30 settler attacks documented 21–27 Apr, bringing 2026 total to over 700 in over 200 communities",
-      "OCHA oPt (1 May 2026): More than 620 Palestinians displaced in 2026 due to demolitions for lack of permits"
+      "OCHA oPt (15 May 2026): at least 33 settler attacks (5\u201311 May); cumulative >800 incidents in 2026",
+      "UN News (15 May 2026): settler violence spike highlighted alongside ongoing Israeli operations and demolitions"
     ],
     "Jordan": [
-      "Petra (1 Apr 2026): Jordan Armed Forces intercepted a missile and two drones targeting Jordanian territory; no injuries, some material damage"
+      "Ahram Online (17 May 2026): Jordan says it intercepted drones and missiles in its airspace",
+      "Travel advisories (May 2026): ongoing risk from falling debris from intercepted projectiles amid renewed regional tensions"
     ],
     "Syria": [
-      "Security Council Report (May 2026): Continued insecurity dynamics in Syria, including spillover missile and drone attacks by pro-Iranian militias"
+      "Security Council briefing (15 May 2026): explosive ordnance continues to kill and injure civilians across Syria",
+      "Rudaw (16 May 2026): SNHR warns of deaths under torture and broader protection concerns"
     ]
   },
   "key_entities": [
     "UNRWA",
-    "the Gaza Strip",
-    "the West Bank",
     "OCHA",
     "UN 2720 Mechanism",
     "Kerem Shalom",
     "Zikim",
-    "Lebanon",
+    "Lebanon MoPH",
     "Jordan Armed Forces",
-    "SNHR",
-    "Security Council Report"
+    "SNHR"
   ]
 }
 ;
-const FIELD_NAMES = {
-  GFO: 'Gaza Field Office', WBFO: 'West Bank Field Office',
-  LFO: 'Lebanon Field Office', SFO: 'Syria Field Office', JFO: 'Jordan Field Office'
-};
 const FIELD_TOPIC_MAP = {
   GFO: ['Gaza', 'UNRWA', 'Iran-Israel'],
   WBFO: ['West Bank', 'UNRWA', 'Iran-Israel'],
