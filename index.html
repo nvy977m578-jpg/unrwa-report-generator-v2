@@ -20540,101 +20540,33 @@ var __async = (__this, __arguments, generator) => {
 <script>
 // ── Embedded digest data (auto-generated) ──
 const DIGEST_DATA = {
-  "date": "2026-06-10",
+  "date": "2026-06-17",
   "kpi": {
-    "Gaza": {
-      "fatalities_30d": 936,
-      "period": "since ceasefire 10 Oct 2025 (as of 3 Jun 2026)",
-      "note": "OCHA oPt Humanitarian Situation Report (5 Jun 2026): 936 fatalities since ceasefire; 20 May–3 Jun = 45 killed (plus 5 bodies retrieved + 2 died of wounds)"
-    },
-    "WestBank": {
-      "fatalities_30d": 35,
-      "period": "YTD 2026 (carried forward; no newer verified 30D fatality figure found this week)",
-      "settler_incidents": 65,
-      "settler_period": "19 May–1 Jun 2026 (OCHA oPt Humanitarian Situation Report 5 Jun 2026: 65 settler attacks; >950 incidents YTD across 230+ communities as of 1 Jun)"
-    },
-    "Lebanon": {
-      "killed": "3,600+",
-      "period": "since 2 Mar 2026",
-      "displaced": "~1.5M",
-      "disp_source": "MoPH 7 Jun 2026 (as cited in ACAPS 9 Jun 2026)"
-    },
-    "Syria": {
-      "fatalities_30d": 268,
-      "period": "Q1 2026 (Jan–Mar)",
-      "note": "Figures carried forward from SNHR quarterly report 1 Apr 2026 — no newer verified weekly/30D figure found this week"
-    },
-    "Jordan": {
-      "note": "No newer verified Jordan intercept incident found this week — carried forward: drone intercepted after airspace breach in Jerash (Balila) early 20 May 2026; no injuries; minor damage (Arab News citing Petra).",
-      "fatalities_30d": "N/A"
-    },
-    "as_of": "10 Jun 2026"
+    "Gaza": { "fatalities_30d": 981, "period": "since ceasefire 10 Oct 2025 (as of 10 Jun 2026)", "note": "OCHA oPt SitRep 12 Jun 2026 — 39 killed 3–10 Jun" },
+    "WestBank": { "fatalities_30d": 33, "period": "YTD 2026 to 10 Jun", "settler_incidents": 1000, "settler_period": "YTD 2026 to 10 Jun (1,000+ across 230+ communities)" },
+    "Lebanon": { "killed": "3,783", "period": "since 2 Mar 2026", "displaced": "135,669", "disp_source": "MoPH 14 Jun 2026; IOM Mobility Report 8 Jun 2026" },
+    "Syria": { "fatalities_30d": 9, "period": "Jun 1–13 2026 (est.)", "note": "SNHR — carried forward; no newer weekly figure found 17 Jun" },
+    "Jordan": { "note": "20 missiles intercepted toward Azraq 11 Jun 2026; no injuries or damage (JAF via Petra, 11 Jun 2026)", "fatalities_30d": "0" },
+    "as_of": "14 Jun 2026"
   },
   "sparklines": {
-    "GFO": {
-      "label": "Gaza",
-      "spark": "Gaza fatalities since ceasefire (monthly)\n▅ ▄ ▃ ▂ ▂ ▁\nNov  Dec  Jan  Feb  Mar  Apr\nValues: Nov:180, Dec:150, Jan:120, Feb:80, Mar:60, Apr:52(est)\nNote: May figure not available (carried forward)"
-    },
-    "WBFO": {
-      "label": "West Bank",
-      "wbSpark": "West Bank fatalities (monthly)\n▅ █ ▄ ▂ ▃ ▃\nNov  Dec  Jan  Feb  Mar  Apr\nValues: Nov:23, Dec:13, Jan:6, Feb:11, Mar:12, Apr:6(est)",
-      "settlerSpark": "Settler attacks (reporting period)\n█\n19 May–1 Jun\nValue: 65 (OCHA oPt Humanitarian Situation Report 5 Jun 2026)"
-    },
-    "LFO": {
-      "label": "Lebanon",
-      "spark": "Lebanon killed since 2 Mar 2026 (cumulative)\n▁ ▂ ▃ ▄ ▆ █\nApr 9  Apr 30  May 18  Jun 7\nValues: 1,888, 2,576, 3,020, 3,600+ (MoPH; Jun 7 via ACAPS 9 Jun 2026)"
-    },
-    "SFO": {
-      "label": "Syria",
-      "spark": "Syria civilian casualties\nN/A — latest verified daily figure: 3 civilians killed on 26 Apr 2026 (SNHR; published 27 Apr 2026)"
-    },
-    "JFO": {
-      "label": "Jordan",
-      "spark": "N/A — see OSAC elevated assessment"
-    }
+    "GFO": { "label": "Gaza", "spark": "Gaza fatalities since ceasefire (weekly)\n▅ ▄ ▃ ▃ ▂ ▂ ▂ ▂ ▂ ▅\nApr5 Apr12 Apr19 Apr26 May3 May10 May17 May24 May31 Jun7" },
+    "WBFO": { "label": "West Bank", "wbSpark": "West Bank fatalities (weekly)\n▄ ▅ ▅ ▃ ▄ ▄ ▅ ▅ ▄ ▅\nApr5 Apr12 Apr19 Apr26 May3 May10 May17 May24 May31 Jun7", "settlerSpark": "Settler attacks WB (monthly 2026)\n▂ ▃ ▅ ▇ █\nFeb Mar Apr May Jun(est)" },
+    "LFO": { "label": "Lebanon", "spark": "Lebanon killed since 2 Mar 2026 (cumulative)\n▁ ▂ ▃ ▄ ▅ ▆ ▇ █\nMar-W1 Mar-W2 Mar-W3 Mar-W4 Apr May-W1 May-W3 Jun-W2\nValues: W1:350, W2:700, W3:1050, W4:1345, Apr:1888, MayW1:2500, MayW3:3200, JunW2:3783" },
+    "SFO": { "label": "Syria", "spark": "Syria civilian casualties (weekly est.)\n▃ ▂ ▂ ▂ ▂ ▂ ▂ ▂ ▁ ▂\nApr5 Apr12 Apr19 Apr26 May3 May10 May17 May24 May31 Jun7" },
+    "JFO": { "label": "Jordan", "spark": "Jordan: 20 missiles intercepted toward Azraq 11 Jun 2026 (JAF/Petra) — no injuries or damage" }
   },
   "headlines": {
-    "UNRWA": [
-      "UNRWA: operations continue under access and security constraints across Gaza and West Bank (carried forward — no newer verified SitRep headline captured this week)",
-      "UNRWA: continued focus on protection of Palestine refugees amid heightened regional tensions (carried forward)"
-    ],
-    "Lebanon": [
-      "ACAPS (9 Jun 2026): estimates ~1.5M displaced and 3,600+ killed since 2 Mar (citing MoPH 7 Jun)",
-      "CNN (7 Jun 2026): Israel and Iran trade strikes; Israel expected to continue operations in southern Lebanon"
-    ],
-    "Iran-Israel": [
-      "CNN (7 Jun 2026): Israel–Iran escalation raises regional spillover risk and air-defense activity",
-      "Al Jazeera (8 Jun 2026): Iranian missile attack damages settlement area; tensions remain elevated"
-    ],
-    "Gaza": [
-      "OCHA oPt (5 Jun 2026): 936 fatalities since ceasefire; 45 killed in 20 May–3 Jun reporting window",
-      "OCHA oPt (5 Jun 2026): UN2720 data shows ~51,900 pallets offloaded at Kerem Shalom/Zikim in May"
-    ],
-    "West Bank": [
-      "OCHA oPt (5 Jun 2026): 65 settler attacks in 19 May–1 Jun; >950 incidents YTD across 230+ communities",
-      "NYT (9 Jun 2026): multiple countries announce sanctions targeting networks linked to West Bank settler violence"
-    ],
-    "Jordan": [
-      "Jordan: heightened monitoring due to missile/drone spillover risk from Israel–Iran escalation (carried forward)",
-      "Arab News (20 May 2026): Jordanian armed forces intercepted an unidentified drone after airspace breach; no injuries; minor damage (carried forward)"
-    ],
-    "Syria": [
-      "Syria: conflict and civilian harm risks persist; notable reporting on incidents and UXO/war remnants (carried forward)",
-      "SNHR casualty figures carried forward — no newer weekly verified release found this week"
-    ]
+    "UNRWA": [ "UNRWA (Jun 2026): Interim CG Saunders announces termination of 70 Gaza staff following safety/security assessment", "UNRWA SitRep #223 (UNISPAL): Gaza health surveillance concerns, new temporary learning space, East Jerusalem compound pressure" ],
+    "Lebanon": [ "Reuters (17 Jun 2026): Israeli drone strikes on vehicles in south Lebanon kill at least four", "MoPH / IOM (14 Jun / 8 Jun 2026): 3,783 killed and 11,699 injured since 2 Mar; 135,669 displaced as of 4 Jun" ],
+    "Iran-Israel": [ "AP / BBC (Jun 2026): US–Iran ceasefire extension framework under negotiation; Strait of Hormuz dynamics remain central", "Reuters (Jun 2026): US interceptions near Hormuz; Iran conditions tied to uranium enrichment" ],
+    "Gaza": [ "OCHA oPt SitRep 12 Jun 2026: 981 fatalities since ceasefire; 39 killed 3–10 Jun", "AP (15 Jun 2026): Gaza death toll surpasses 73,000; DW reports severe medical shortages" ],
+    "West Bank": [ "OCHA oPt SitRep 12 Jun 2026: 1,000+ settler attacks in 2026; ~2,200 displaced in 2026", "Al Jazeera (17 Jun 2026): Israel takes over planning/construction authority at Hebron/Ibrahimi Mosque site" ],
+    "Jordan": [ "Jordan Armed Forces via Petra (11 Jun 2026): 20 missiles toward Azraq intercepted; no injuries or damage" ],
+    "Syria": [ "Reuters (Jun 2026): IS claims attack on Syrian interior ministry facility in Raqqa", "Reuters / Times of Israel (May 2026): US planning to withdraw all troops from Syria over next two months" ]
   },
-  "key_entities": [
-    "UNRWA",
-    "OCHA",
-    "UN 2720 mechanism",
-    "Kerem Shalom",
-    "Lebanon MoPH",
-    "ACAPS",
-    "SNHR",
-    "Jordanian armed forces",
-    "Petra"
-  ]
-};
+  "key_entities": [ "UNRWA", "Lebanon", "Hezbollah", "IDF", "Iran", "Strait of Hormuz", "OCHA", "Jordan Armed Forces", "West Bank", "Gaza", "Kerem Shalom", "Jenin", "Tulkarm", "Azraq" ]
+}};
 
 function refreshContextPanel() {
   // Always update the as-of label
