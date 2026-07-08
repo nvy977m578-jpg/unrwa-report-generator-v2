@@ -20540,108 +20540,57 @@ var __async = (__this, __arguments, generator) => {
 <script>
 // ── Embedded digest data (auto-generated) ──
 const DIGEST_DATA = {
-  "date": "2026-07-01",
+  "date": "2026-07-08",
   "kpi": {
-    "Gaza": {
-      "fatalities_30d": 1029,
-      "period": "since ceasefire 10 Oct 2025 (as of 26 Jun 2026)",
-      "note": "OCHA oPt Humanitarian Situation Report 26 Jun 2026 (MoH Gaza) — 23 killed + 1 body retrieved + 1 died of wounds (17–24 Jun)"
-    },
-    "WestBank": {
-      "fatalities_30d": 33,
-      "period": "YTD 2026 to 19 Jun 2026 (carried forward — no newer verified figure found this week)",
-      "settler_incidents": 40,
-      "settler_period": "Reporting period per OCHA oPt Humanitarian Situation Report 26 Jun 2026 (at least 40 settler attacks); June arson attacks: ≥10; communities emptied: 9"
-    },
-    "Lebanon": {
-      "killed": "4243",
-      "period": "since 2 Mar 2026",
-      "displaced": "~1,000,000",
-      "disp_source": "Killed/wounded: Lebanese MoPH update reported 27 Jun 2026 (ABNA English). Displacement: social affairs minister via Reuters 30 Jun 2026 (~1 million displaced since March)."
-    },
-    "Syria": {
-      "fatalities_30d": 9,
-      "period": "Jun 1–13 2026 (est.) (carried forward)",
-      "note": "SNHR — carried forward; no newer weekly figure found this week"
-    },
-    "Jordan": {
-      "note": "Missile/drone intercept count carried forward (last verified 11 Jun 2026: 20 missiles intercepted toward Azraq; no injuries/damage). Latest official update: Eastern Military Zone downed low-flying aerial targets linked to a drone-guided narcotics attempt (Petra, 30 Jun 2026; no injuries/damage).",
-      "fatalities_30d": "N/A"
-    },
-    "as_of": "01 Jul 2026"
+    "Gaza": { "fatalities_30d": 1053, "period": "since ceasefire 10 Oct 2025 (as of 29 Jun 2026)", "note": "OCHA oPt HSR 3 Jul 2026 — 3,406 injuries; 41,800 pallets offloaded Jun (UN2720)" },
+    "WestBank": { "fatalities_30d": 35, "period": "YTD 2026 to 29 Jun", "settler_incidents": 37, "settler_period": "23–29 Jun 2026 (OCHA oPt HSR 3 Jul 2026)" },
+    "Lebanon": { "killed": "4,243", "period": "since 2 Mar 2026", "displaced": "~1,000,000", "disp_source": "MoPH 27 Jun 2026; Reuters 30 Jun 2026" },
+    "Syria": { "fatalities_30d": 9, "period": "Jul 1–8 2026 (est.)", "note": "SNHR — carried forward; Damascus cafe blast 2 Jul (≥9 killed)" },
+    "Jordan": { "note": "Narcotics drone interdictions continuing along eastern/western borders (Petra/JAF, Jul 2026); last missile intercept: Azraq 11 Jun 2026", "fatalities_30d": "0" },
+    "as_of": "3 Jul 2026"
   },
   "sparklines": {
-    "GFO": {
-      "label": "Gaza",
-      "spark": "Gaza fatalities since ceasefire (weekly)\n▅ ▄ ▃ ▃ ▂ ▂ ▂ ▂ ▂ ▅\nApr5 Apr12 Apr19 Apr26 May3 May10 May17 May24 May31 Jun7"
-    },
-    "WBFO": {
-      "label": "West Bank",
-      "wbSpark": "West Bank fatalities (weekly)\n▄ ▅ ▅ ▃ ▄ ▄ ▅ ▅ ▄ ▅\nApr5 Apr12 Apr19 Apr26 May3 May10 May17 May24 May31 Jun7",
-      "settlerSpark": "Settler attacks WB (selected points)\n▂ ▃ ▅\nApr (14–20) Jun (17–24)"
-    },
-    "LFO": {
-      "label": "Lebanon",
-      "spark": "Lebanon killed since 2 Mar 2026 (cumulative)\n▁ ▂ ▃ ▄ ▅ ▆ ▇ █\nMar-W1 Mar-W2 Mar-W3 Mar-W4 Apr May-W1 May-W3 Jun-W4\nValues: W1:350, W2:700, W3:1050, W4:1345, Apr:1888, MayW1:2500, MayW3:3200, JunW4:4243"
-    },
-    "SFO": {
-      "label": "Syria",
-      "spark": "Syria civilian casualties (weekly est.)\n▃ ▂ ▂ ▂ ▂ ▂ ▂ ▂ ▁ ▂\nApr5 Apr12 Apr19 Apr26 May3 May10 May17 May24 May31 Jun7"
-    },
-    "JFO": {
-      "label": "Jordan",
-      "spark": "Jordan: 20 missiles intercepted toward Azraq 11 Jun 2026 (JAF/Petra) — no injuries or damage; anti-smuggling drone downed 30 Jun 2026 (Petra)"
-    }
+    "GFO": { "label": "Gaza", "spark": "Gaza fatalities since ceasefire (weekly)\n▃ ▃ ▂ ▂ ▂ ▂ ▂ ▂ ▂ ▃ ▃ ▄\nApr5 Apr12 Apr19 Apr26 May3 May10 May17 May24 May31 Jun7 Jun14 Jun21\nValues: 8,9,10,8,9,10,11,12,10,39,24,23" },
+    "WBFO": { "label": "West Bank", "wbSpark": "West Bank fatalities (weekly)\n▄ ▅ ▅ ▃ ▄ ▄ ▅ ▅ ▄ ▅ ▄ ▄\nApr5 Apr12 Apr19 Apr26 May3 May10 May17 May24 May31 Jun7 Jun14 Jun21", "settlerSpark": "Settler attacks WB (weekly 2026)\n▂ ▃ ▅ ▇ █ ▇\nFeb Mar Apr May Jun(early) Jun23-29\nValues: Feb:~150, Mar:200+, Apr:~180, May:~220, Jun(early):~130, Jun23-29:37" },
+    "LFO": { "label": "Lebanon", "spark": "Lebanon killed since 2 Mar 2026 (cumulative)\n▁ ▂ ▃ ▄ ▅ ▆ ▇ █\nMar-W1 Mar-W2 Mar-W3 Mar-W4 Apr May-W1 May-W3 Jun-W3\nValues: 350, 700, 1050, 1345, 1888, 2500, 3200, 4243" },
+    "SFO": { "label": "Syria", "spark": "Syria events (weekly est.)\n▃ ▂ ▂ ▂ ▂ ▂ ▂ ▂ ▁ ▂ ▂ █\nApr5-Jun14 (est.) Jun21 Jun28 Jul2-cafe\nNote: Damascus cafe blast 2 Jul killed ≥9" },
+    "JFO": { "label": "Jordan", "spark": "Jordan: narcotics drone interdictions continuing; last missile intercept Azraq 11 Jun (JAF/Petra, Jul 2026)" }
   },
   "headlines": {
     "UNRWA": [
-      "UNRWA chief calls for urgent funding and reform as agency faces a $100 million deficit (Anadolu Ajansı, 30 Jun 2026)",
-      "UNRWA operations continue under funding pressure; agency reiterates need for sustained donor support (carried forward context; no newer official UNRWA SitRep figure found this week)"
+      "Reuters (30 Jun 2026): UN Secretary-General warns UNRWA nearing 'breaking point' on funding",
+      "UNRWA SitRep #226 (UNISPAL): operational constraints, staffing/access restrictions, service-delivery indicators for Gaza and West Bank"
     ],
     "Lebanon": [
-      "Hundreds of thousands of displaced Lebanese return south after lull, but many remain in shelters/temporary housing (Reuters, 30 Jun 2026)",
-      "Lebanese MoPH-reported toll since 2 Mar rises to 4,243 killed and 12,186 wounded (ABNA English, 27 Jun 2026)"
+      "ABNA / Reuters (27–30 Jun 2026): 4,243 killed / 12,186 wounded since 2 Mar; ~1M displaced; trilateral framework talks ongoing",
+      "Reuters / Al Jazeera (6–7 Jul 2026): IDF drone strike kills four in Nabatieh al-Fawqa; IDF warns of rapid offensive if ceasefire violated",
+      "Times of Israel (5 Jul 2026): IDF struck Hezbollah operatives at Ali Taher ridge; IDF chief warns of rapid response to violations"
     ],
     "Iran-Israel": [
-      "Iran cyberattacks on Israel surged in 2026, Israeli cyber chief says (Reuters, 29 Jun 2026)",
-      "Israel and Lebanon deny any Israeli withdrawal from parts of southern Lebanon buffer zone amid talks (Reuters, 25 Jun 2026)"
+      "Reuters (8 Jul 2026): Tanker attacks in Strait of Hormuz followed by new US strikes on Iran; ceasefire assessed as fragile",
+      "Reuters (6 Jul 2026): Trump renews 'deal or finish the job' threat as ceasefire holds",
+      "Reuters (5 Jul 2026): Tehran funeral prayers for slain Ali Khamenei; successor Mojtaba not seen publicly"
     ],
     "Gaza": [
-      "OCHA oPt reports 1,029 fatalities since ceasefire announcement; 23 killed + 1 body retrieved + 1 died of wounds during 17–24 Jun (OCHA oPt, 26 Jun 2026)",
-      "UN tracking shows large-scale aid offloaded into Gaza through UN2720 mechanism (carried forward; no newer Kerem Shalom monthly verified figure found this week)"
+      "OCHA oPt HSR 3 Jul 2026: 1,053 fatalities since ceasefire; 3,406 injuries; 41,800 pallets offloaded in June (UN2720)",
+      "BBC / WHO (3 Jul 2026): 1,977 evacuated since ceasefire; ~15,000 still awaiting; ~300 deaths while waiting",
+      "Reuters / Al Jazeera (6–7 Jul 2026): Hamas dissolves de facto Gaza government, signals readiness to hand over to technocrats"
     ],
     "West Bank": [
-      "OCHA documents at least 40 settler attacks in latest reporting period and at least 10 arson-related attacks so far in June (OCHA oPt, 26 Jun 2026)",
-      "OCHA notes nine Bedouin/herding communities completely emptied of residents amid escalating settler attacks; East Tayba partially displaced (OCHA oPt, 26 Jun 2026)"
+      "OCHA oPt HSR 3 Jul 2026: ~2,300 displaced in 2026; 37 settler attacks 23–29 Jun; 9 communities completely emptied",
+      "Reuters (3 Jul 2026): Israeli settlers seize partially built home in Jalud",
+      "Al Jazeera (3 Jul 2026): Settler attacks damage water spring (Ein Rawabi) and electricity infrastructure (Al-Maniya)"
     ],
     "Jordan": [
-      "Eastern Military Zone foils drone-guided narcotics attempt using low-flying aerial targets; no injuries/damage reported (Petra, 30 Jun 2026)",
-      "Missile intercept count carried forward from 11 Jun 2026 official statement (no newer verified intercept figure found this week)"
+      "Petra / JAF (Jul 2026): Eastern and Southern Military Zones intercept multiple narcotics drone smuggling attempts",
+      "Petra (28 Jun 2026): Jordan MFA condemns Iranian drone attacks on Bahrain"
     ],
     "Syria": [
-      "Israeli army raids village in southern Syria, searches civilian homes (Anadolu Ajansı, 27 Jun 2026)",
-      "SNHR weekly civilian casualty figure not located this week; dashboard retains prior verified value (carried forward)"
+      "Reuters / AP (2–3 Jul 2026): Damascus cafe blast kills ≥9, wounds 20; no claim; Syrian transitional parliament session delayed",
+      "Reuters (6 Jul 2026): Macron visits Syria — first EU head of state visit since 2024; explosions reported during visit"
     ]
   },
-  "key_entities": [
-    "UNRWA",
-    "OCHA oPt",
-    "MoH Gaza",
-    "Lebanese MoPH",
-    "Reuters",
-    "UN2720",
-    "Kerem Shalom",
-    "West Bank",
-    "Gaza",
-    "Lebanon",
-    "Jordan Armed Forces",
-    "Petra",
-    "Eastern Military Zone",
-    "SNHR",
-    "IDF",
-    "Hezbollah",
-    "Iran"
-  ]
+  "key_entities": [ "UNRWA", "Lebanon", "Hezbollah", "IDF", "Iran", "Strait of Hormuz", "OCHA", "Jordan Armed Forces", "West Bank", "Gaza", "Hamas", "Damascus", "Macron", "Kerem Shalom", "Azraq" ]
 };
 
 function refreshContextPanel() {
